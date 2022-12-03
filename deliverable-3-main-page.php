@@ -20,9 +20,9 @@
 
 
 We are inserting data into the PLAYER table which has two columns known as userName and legendName.
-<br>These are both varchar (50) fields which are meant to have strings inserted into them.
-<br>Also userName is the primary key of the table so it cannot be left blank.
-<br>If it is left blank the page will not submit until it is filled.
+<br>These are both varchar (50) fields which are meant to have strings inserted into them. Also userName is
+<br>the primary key of the table so it cannot be left blank.  If it is left blank the page will not submit
+<br>until it is filled.
 
 <br>
 <br>
@@ -35,6 +35,9 @@ Username: <input type="text" name="username" required><br>
 Legend name: <input type="text" name="legendname"><br>
 <input type="submit">
 </form>
+
+<br>
+<br>
 
 <h2>Player Table</h2>
 
