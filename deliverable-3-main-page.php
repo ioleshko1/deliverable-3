@@ -40,8 +40,8 @@ We are inserting data into the PLAYER table which has two columns known as userN
 
 <!-- Here we have a form available with the User Name, Legend Name, and the submit button along with a POST method to lead to the next page -->
 <form action="deliverable-3.php" method="post">
-        Username: <input type="text" name="username" required><br>
-        Legend name: <input type="text" name="legendname"><br>
+        Username: <input type="text" name="username" required><br><br>
+        Legend name: <input type="text" name="legendname"><br><br>
         <input type="submit">
 </form>
 
