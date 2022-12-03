@@ -1,6 +1,6 @@
-# deliverable-3
+# Deliverable #3
 
-## Link to website:  http://ecs-pw-proj-web.ecs.csus.edu/~ioleshko/deliverable-3-main-page.php
+## Link to website:  http://ecs-pw-proj-web.ecs.csus.edu/~ioleshko
 
 ### File Paths
 SELECT Statements:  /deliverable-3-main-page.php
