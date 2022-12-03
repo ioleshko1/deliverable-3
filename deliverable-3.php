@@ -36,7 +36,7 @@ $legendname = $_POST["legendname"];
 
 // Check to see if the insert completed successfully
 if ($sqlPlayerInsert->execute() === TRUE) {
-  echo "New Legend record created successfully";
+  echo "New Player record created successfully";
 } else {
   echo "Error: " . $conn->error;
 }
