@@ -22,8 +22,8 @@
 
 
 <!-- Here we are inserting some text to be displayed so the user can see what kind of data we want to be inputted -->
-We are inserting data into the PLAYER table which has two columns known as userName and legendName.
-<br>These are both varchar (50) fields which are meant to have strings inserted into them. Also userName is
+We are inserting data into the PLAYER table which has one columns known as userName.
+<br>It is a varchar (50) field which is meant to have strings inserted into it. Also userName is
 <br>the primary key of the table so it cannot be left blank.  If it is left blank the page will not submit
 <br>until it is filled.
 
@@ -38,10 +38,9 @@ We are inserting data into the PLAYER table which has two columns known as userN
 <h2>Add Players</h2>
 
 
-<!-- Here we have a form available with the User Name, Legend Name, and the submit button along with a POST method to lead to the next page -->
+<!-- Here we have a form available with the User Name and the submit button along with a POST method to lead to the next page -->
 <form action="deliverable-3.php" method="post">
         Username: <input type="text" name="username" required><br><br>
-        Legend name: <input type="text" name="legendname"><br><br>
         <input type="submit">
 </form>
 
@@ -80,8 +79,8 @@ We are inserting data into the PLAYER table which has two columns known as userN
         }
 
 
-        // Here we are creating several variable to keep track of the SQL query and the result that it is getting
-        $sql = "SELECT username, legendName FROM PLAYER";
+        // Here we are creating a variable to keep track of the SQL query and the result that it is getting
+        $sql = "SELECT userName FROM PLAYER";
         $result = $conn->query($sql);
 
 
@@ -94,9 +93,8 @@ We are inserting data into the PLAYER table which has two columns known as userN
 <!-- Here we are creating a table structure so we can insert the data that we are getting from the database in a clean fashion -->
 <table>
         <tr>
-                <!-- Add a column name to the two columns that we will be using -->
+                <!-- Add a column name to the column that we will be using -->
                 <td>User Name</td>
-                <td>Legend Name</td>
         </tr>
 
 
@@ -109,8 +107,7 @@ We are inserting data into the PLAYER table which has two columns known as userN
 
                         // Here we are echoing all of the rows of data using the table format
                         echo "<tr>
-                                     <td>".$row["username"]."</td>
-                                     <td>".$row["legendName"]."</td>
+                                     <td>".$row["userName"]."</td>
                               </tr>";
 
                 } // End of the while loop
