@@ -41,16 +41,15 @@
 
 
         // Create the prepared statement with the query that is going to be run
-        $sqlPlayerInsert = $conn->prepare("INSERT INTO PLAYER (userName, legendName) VALUES (?,?)");
+        $sqlPlayerInsert = $conn->prepare("INSERT INTO PLAYER (userName) VALUES (?)");
 
 
         // Bind the variable names to the inputs that are going to be added
-        $sqlPlayerInsert->bind_param("ss",$playername,$legendname);
+        $sqlPlayerInsert->bind_param("s",$playername);
 
 
-        // Create two variables matching the same in the binding param
+        // Create a variable matching the same in the binding param
         $playername = $_POST["username"];
-        $legendname = $_POST["legendname"];
 
 
         // Check to see if the insert completed successfully
